@@ -22,7 +22,7 @@ export default function Weather() {
                         <div className="row">
                             <div className="col-md-4 col-xs-6 col-sm-6 offset-xs-1">
                                 <div className="city-main">
-                                    <p className="city-main-name" id="citymain"></p>
+                                    <p className="city-main-name" id="citymain">Lisbon</p>
                                     <p className="city-info">Last update: <span id="lastupdate"></span> </p>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ export default function Weather() {
                                     <img src="img/heart.svg" className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Pressure</h5>
-                                        <p className="card-text-detail"><span id="metrick-pressure"></span> hpa</p>
+                                        <p className="card-text-detail"><span id="metrick-pressure">2</span> hpa</p>
 
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ export default function Weather() {
                                     <img src="img/humidity.svg" className="card-img-top" id="card-img-hum" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Humidity</h5>
-                                        <p className="card-text-detail"><span id="humidity"></span>%</p>
+                                        <p className="card-text-detail"><span id="humidity">54</span>%</p>
                                     </div>
                                 </div>
                             </div>
