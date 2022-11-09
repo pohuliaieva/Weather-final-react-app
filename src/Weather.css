@@ -234,6 +234,7 @@ input[type='text'] {
     width: 90px;
     padding: 20px;
     fill: #fff;
+    margin: auto;
 }
 
 #card-img-hum {

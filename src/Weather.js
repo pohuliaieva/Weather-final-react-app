@@ -1,5 +1,10 @@
 import React from "react";
 import "./Weather.css"
+import Wind from "./img/wind.svg";
+import Pressure from "./img/heart.svg";
+import Humidity from "./img/humidity.svg";
+import Water from "./img/water-waves.svg";
+import Like from "./img/like.svg";
 
 export default function Weather() {
     return (
@@ -45,7 +50,7 @@ export default function Weather() {
                             <div className="col-xs-6 col-sm-6 col-md-3 ">
                                 <div className="card" id="card-details">
                                     <div className="details-icon">
-                                        <img src="img/wind.svg" className="card-img-top" alt="..." />
+                                        <img src={Wind} className="card-img-top" alt="..." />
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">Wind speed</h5>
@@ -56,7 +61,7 @@ export default function Weather() {
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-3 ">
                                 <div className="card" id="card-details">
-                                    <img src="img/heart.svg" className="card-img-top" alt="..." />
+                                    <img src={Pressure} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Pressure</h5>
                                         <p className="card-text-detail"><span id="metrick-pressure">2</span> hpa</p>
@@ -66,7 +71,7 @@ export default function Weather() {
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-3 ">
                                 <div className="card" id="card-details">
-                                    <img src="img/humidity.svg" className="card-img-top" id="card-img-hum" alt="..." />
+                                    <img src={Humidity} className="card-img-top" id="card-img-hum" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Humidity</h5>
                                         <p className="card-text-detail"><span id="humidity">54</span>%</p>
@@ -75,7 +80,7 @@ export default function Weather() {
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-3 ">
                                 <div className="card" id="card-details">
-                                    <img src="img/water-waves.svg" className="card-img-top" alt="..." />
+                                    <img src={Water} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Water</h5>
                                         <p className="card-text-detail"><span id="metrick-water">21</span> °C</p>
@@ -114,7 +119,7 @@ export default function Weather() {
                             <div className="block-recomendations">
                                 <div className="like-icon">
                                     <div className="col-md-1">
-                                        <img src="img/like.svg" alt="like icon" width="50px" />
+                                        <img src={Like} alt="like icon" width="50px" />
                                     </div>
                                 </div>
                                 <div className="rec-text">
