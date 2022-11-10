@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CurrentTime from "./CurrentTime";
 import "./Weather.css"
 import Wind from "./img/wind.svg";
 import Pressure from "./img/heart.svg";
@@ -19,7 +20,8 @@ export default function Weather() {
             pressure: response.data.main.pressure,
             description: response.data.weather[0].description,
             wind: response.data.wind.speed,
-            city: response.data.name
+            city: response.data.name,
+            date: new Date(response.data.dt * 1000)
 
         });
 
@@ -48,7 +50,7 @@ export default function Weather() {
                                 <div className="col-md-4 col-xs-6 col-sm-6 offset-xs-1">
                                     <div className="city-main">
                                         <p className="city-main-name" id="citymain">{weatherData.city}</p>
-                                        <p className="city-info">Last update: <span id="lastupdate"></span> </p>
+                                        <p className="city-info">Last update: <CurrentTime date={weatherData.date} />  <span id="lastupdate"></span> </p>
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-xs-6 col-sm-6 offset-md-1">
@@ -162,7 +164,7 @@ export default function Weather() {
                     <p className="copy">Developed by <a href="https://github.com/pohuliaieva/Weather-App-by-Pohuliaieva" className="copy-link"
                         target="_blank" rel="noreferrer"> Yevheniia Pohuliaieva</a> </p>
                 </div>
-            </div>
+            </div >
         );
     }
     else {
