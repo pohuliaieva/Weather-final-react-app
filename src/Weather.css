@@ -78,7 +78,7 @@ input[type='text'] {
 .first-part {
     background: linear-gradient(109.6deg, rgb(61, 106, 239) 11.2%, rgb(122, 14, 190) 70.2%);
     border-radius: 0 0 100px 100px;
-    padding-bottom: 50px;
+
     box-shadow: 0px 3px 25px 5px rgba(80, 5, 99, 0.55);
 }
 
